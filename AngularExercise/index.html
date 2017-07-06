@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	h5{
+		color: #f00;
+	}
+	.box{
+		width: 500px;
+		height: 300px;
+		float: left;
+	}
+	.sky{
+		color:white;
+	    background-color:lightblue;
+	}
+	.tomato{
+		color:white;
+	    background-color:coral;;
+	}
+	</style>
+</head>
+<body>
+<div ng-app="">
+	<h5>1.ng-app ng-model练习</h5>
+	<div class="box box1">
+		<p>名字 : <input type="text" ng-model="name"></p>
+	 	<h4>Hello {{name}}</h4>
+	</div>
+	<h5>2.表达式练习</h5>
+	<div class="box box2">
+		<p>
+			{{5-2}}
+		</p>
+	</div>
+	<h5>3.一层遍历</h5>
+	<div class="box" ng-init="nams=['Jani','Hege','Kai']">
+		<ul>
+			<li>循环数组</li>
+			<li ng-repeat="x in nams">
+				{{ x }}
+			</li>
+		</ul>
+	</div>
+	<h5>4.二层遍历</h5>
+	<div class="box" ng-init="names=[{nam:'zj',age:12},{nam:'yyr',age:15}]">
+		<ul>
+			<li ng-repeat="x in names">
+				姓名:{{x.nam}}
+				年龄:{{x.age}}
+			</li>
+		</ul>
+	</div>
+	<h5>ng-class练习</h5>
+	<div class="box box5">
+		<p>选择一个类:</p>
+		<select ng-model="home">
+			<option value="sky">天空色</option>
+			<option value="tomato">番茄色</option>
+		</select>
+
+		<div ng-class="home" style="width:300px">
+		  <h1>Welcome Home!</h1>
+		  <p>I like it!</p>
+		</div>
+	</div>
+	<h5>ng-if练习</h5>
+	<div class="box box4">
+		<input type="checkbox" ng-model="che">
+		<div ng-if="che" style="color:#0f0;">
+			我出现了
+		</div>
+		没选中就不出现
+	</div>
+	<h5>ng-show && ng-hide</h5>
+	<div class="box">
+		<input type="checkbox" ng-model="myVar">
+		<div ng-show="myVar">
+		<h1>Welcome</h1>
+		<p>Welcome to my home.</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src='./js/angular.min.js'></script>
+</body>
+</html>

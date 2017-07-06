@@ -1,0 +1,104 @@
+body
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+.header
+  font-size: .18rem
+  height: .44rem
+  line-height: .44rem
+  text-align: center
+  position: relative
+  border-bottom: 1px solid #ccc
+  .back
+    position: absolute
+    left: .1rem
+    color: #37bc9b
+    font-size: .16rem
+
+.content
+  -webkit-flex: 1
+  overflow-y: scroll
+
+.banner
+  background-color: #3ab193
+  position: relative
+
+.talk, .note
+  position: absolute
+  top: 10px
+  color: #fff
+
+.talk
+  left: 20px
+
+.note
+  right: 20px
+
+.banner-content
+  padding-top: 20px
+  padding-bottom: 23px
+  .photo
+    width: .9rem
+    height: .9rem
+    border-radius: 100%
+    overflow: hidden
+    margin: 0 auto 12px
+    img
+      width: 100%
+      height: 100%
+
+  .title, .info
+    color: #fff
+    text-align: center
+
+.slide-part
+  padding-top: 15px
+  padding-bottom: 15px
+  display: -webkit-flex
+
+  dl
+    -webkit-flex: 1
+    text-align: center
+    dt
+      width: 65px
+      height: 65px
+      margin: 0 auto 10px
+      img
+        height: 100%
+        display: block
+
+.newlist
+  .title
+    height: 33px
+    line-height: 33px
+    background-color: #eee
+    padding-left: 10px
+    padding-right: 10px
+  .content
+    font-size: 14px
+    li
+      line-height: 40px
+      padding-left: 10px
+      padding-right: 10px
+      border-bottom: 1px solid #ccc
+
+.footer
+  height: .5rem
+  line-height: .5rem
+  text-align: center
+  border-top: 1px solid #ccc
+
+.footer-nav
+  display: -webkit-flex
+  a
+    -webkit-flex: 1
+    color: #37bc9b
+    font-size: .16rem
+  a.active
+    background-color: #37bc9b
+    color: #fff

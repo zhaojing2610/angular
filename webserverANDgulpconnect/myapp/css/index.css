@@ -1,0 +1,213 @@
+.header {
+  background: #099fde;
+  color: #fff; }
+  .header .for {
+    position: absolute;
+    right: 0.1rem;
+    top: 0; }
+    .header .for .icon {
+      font-size: 0.2rem;
+      margin-left: 0.08rem; }
+
+.bj {
+  width: 100%;
+  height: 0.44rem;
+  background: #f0eae4;
+  display: flex;
+  text-align: center;
+  line-height: 0.44rem; }
+  .bj span {
+    flex: 1;
+    font-size: 0.16rem; }
+    .bj span .icon {
+      font-size: 0.2rem; }
+  .bj div {
+    flex: 3;
+    position: relative; }
+    .bj div .icon {
+      position: absolute;
+      left: 0.07rem;
+      top: 0.03rem;
+      color: #f00; }
+    .bj div input {
+      width: 100%;
+      height: 68%;
+      background: #fff;
+      border: none;
+      border-radius: 0.25rem;
+      text-indent: 0.24rem; }
+
+.banner {
+  width: 100%;
+  height: 1.275rem;
+  overflow: hidden;
+  position: relative; }
+  .banner .swiper-container {
+    position: static; }
+  .banner .swiper-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+  .banner img {
+    width: 100%;
+    height: 100%; }
+
+.tit {
+  width: 100%;
+  height: 0.6rem;
+  text-align: center;
+  font-size: 0.14rem;
+  color: red; }
+  .tit p {
+    width: 100%;
+    height: 0.3rem;
+    background: url(../images/images/3_02.png) no-repeat left top;
+    background-size: 100% 100%;
+    line-height: 0.3rem; }
+    .tit p .icon {
+      font-size: 0.2rem; }
+  .tit a {
+    line-height: 0.3rem;
+    font-size: 0.10rem; }
+
+.navbar {
+  height: 0.41rem;
+  background: #fff;
+  position: relative;
+  overflow: hidden; }
+  .navbar #wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%; }
+    .navbar #wrapper #scroller {
+      width: 440px; }
+      .navbar #wrapper #scroller ul {
+        margin-top: 0.07rem; }
+        .navbar #wrapper #scroller ul li {
+          float: left;
+          margin-left: 0.05rem;
+          padding: 0.05rem  0.1rem;
+          border: 1px solid #ccc;
+          border-radius: 0.1rem; }
+        .navbar #wrapper #scroller ul .first {
+          background: #999; }
+
+.spec {
+  margin-left: 0.1rem;
+  height: 0.6rem;
+  width: 93%;
+  box-sizing: border-box;
+  background: #ffeedd;
+  border-radius: 0.08rem;
+  overflow: hidden; }
+  .spec dl {
+    height: 100%; }
+    .spec dl dt {
+      width: 27%;
+      float: left; }
+      .spec dl dt img {
+        width: 0.7rem;
+        height: 0.6rem; }
+    .spec dl dd {
+      float: left;
+      width: 73%; }
+      .spec dl dd h3 {
+        line-height: 0.25rem; }
+
+.inp {
+  width: 94%;
+  height: 0.3rem;
+  margin-left: 3%;
+  margin-top: 0.05rem;
+  border-radius: 0.1rem;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden; }
+  .inp input {
+    border: none;
+    width: 100%;
+    height: 100%; }
+  .inp .icon {
+    position: absolute;
+    right: 0.1rem;
+    top: 0.08rem; }
+
+.dlist {
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  box-sizing: border-box;
+  padding-bottom: 0.05rem; }
+  .dlist h3 {
+    font-weight: normal;
+    margin-top: 0.05rem;
+    width: 100%;
+    height: 0.3rem;
+    font-size: 0.16rem;
+    line-height: 0.3rem; }
+  .dlist dl {
+    width: 100%;
+    height: 0.8rem; }
+    .dlist dl dt {
+      width: 40%;
+      height: 100%;
+      float: left; }
+      .dlist dl dt img {
+        width: 100%;
+        height: 100%; }
+    .dlist dl dd {
+      float: left;
+      width: 60%;
+      padding-left: 0.08rem;
+      box-sizing: border-box; }
+      .dlist dl dd h4 {
+        color: #f00;
+        line-height: 0.2rem; }
+        .dlist dl dd h4 .icon {
+          color: #999; }
+      .dlist dl dd p {
+        line-height: .18rem; }
+        .dlist dl dd p span {
+          color: orange; }
+      .dlist dl dd a {
+        float: right;
+        margin-right: 0.1rem; }
+
+.say {
+  width: 94%;
+  margin-left: 3%;
+  height: auto;
+  background: #eeeeee;
+  padding: 0.06rem 0.1rem;
+  line-height: 0.2rem;
+  font-size: 0.14rem;
+  box-sizing: border-box;
+  margin-top: 0.02rem;
+  border-radius: 0.1rem; }
+  .say dl {
+    height: 0.3rem; }
+    .say dl dt {
+      width: .3rem;
+      float: left; }
+      .say dl dt img {
+        width: 0.3rem;
+        height: 0.3rem; }
+    .say dl dd {
+      width: 2.5rem;
+      padding-left: 0.1rem;
+      box-sizing: border-box;
+      float: left;
+      font-size: 0.13rem;
+      line-height: 0.15rem; }
+
+.footer {
+  display: flex; }
+  .footer dl {
+    flex: 1; }
+    .footer dl dt {
+      padding-top: 0.05rem; }
+      .footer dl dt .icon {
+        font-size: 0.22rem; }
+
+/*# sourceMappingURL=index.css.map */

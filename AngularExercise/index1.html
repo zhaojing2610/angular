@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index1.html</title>
+	<style>
+		div{
+			width: 500px;
+			height: 300px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+<div class="box3" ng-app="box3" ng-controller='myctrl'>
+		<hr/>
+			<div>
+				<h5>controller练习</h5>
+				姓名：<input type="text" ng-model='names'><br/>
+				年龄：<input type="text" ng-model="ages"><br/>
+				<br/>
+				MSG:{{names + " " + ages}}
+			</div>
+		<hr/>
+			<div>
+				<button ng-click="count = count + 1">点我！</button>
+				<p>{{ count }}</p>
+			</div>
+		<hr/>
+	</div>
+<script type="text/javascript" src='./js/angular.min.js'></script>
+<script type="text/javascript">
+	var app = angular.module("box3",[]);
+	app.controller("myctrl",function($scope){
+		$scope.names = "赵静";
+		$scope.ages = 22
+		$scope.count = 0;
+	})
+</script>
+</body>
+</html>

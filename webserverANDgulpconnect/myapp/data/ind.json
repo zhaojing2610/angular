@@ -1,0 +1,48 @@
+{
+	"data":[
+		{
+			"shop":"净悟真私宅烤全羊（龙城总店）",
+			"src":"images/images/6_06.png",
+			"title":"美食林臻选",
+			"price":"195",
+			"proType":"西北菜",
+			"km":"4.7",
+			"advert":"   ",
+			"userImg":'',
+			"feedbackInfo":"旅行者推荐：藏在私宅中的美味，烤全羊采用西北王私厨的秘方，让人回味无穷。"
+		},
+		{
+			"shop":"安缦馆",
+			"src":"images/images/6_06.png",
+			"title":"美食林臻选",
+			"price":"600",
+			"proType":"颐和园",
+			"km":"4.9",
+			"advert":"推荐主题：下午茶 老建筑餐厅 景观餐厅",
+			"userImg":"images/images/8_10.png",
+			"feedbackInfo":"Lady_Vi: 安缦馆的环境与服务极佳，食材新鲜味道好，后院的下午茶是亮点，非常..."
+		},
+		{
+			"shop":"水木锦堂铁板烧自助餐厅（五道口店）",
+			"src":"images/images/6_06.png",
+			"title":"美食林臻选",
+			"price":"170",
+			"proType":"自助餐",
+			"km":"6.2",
+			"advert":"   ",
+			"userImg":"images/images/8_10.png",
+			"feedbackInfo":"珈璇筱嫣：铁板烧烟量控制的很好，肉质口感制作非常地道，五道口吃铁板烧的..."
+		},
+		{
+			"shop":"好牛肉专门店（老佛爷百货店）",
+			"src":"images/images/6_06.png",
+			"title":"美食林臻选",
+			"price":"154",
+			"proType":"日本料理",
+			"km":"16.2",
+			"advert":"   ",
+			"userImg":'',
+			"feedbackInfo":"旅游者推荐：烤肉控们一致好评的日式烤肉店，各式牛肉更是其招牌推荐。"
+		}
+	]
+}

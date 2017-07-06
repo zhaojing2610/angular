@@ -1,0 +1,74 @@
+.header {
+  height: 0.45rem;
+  line-height: 0.45rem;
+  font-size: 0.16rem;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc; }
+
+.header input {
+  border: 1px solid #ccc;
+  flex: 1;
+  height: 0.3rem;
+  margin-left: 0.2rem;
+  padding-left: 0.1rem;
+  box-sizing: border-box; }
+
+.header a {
+  margin: 0 0.15rem;
+  font-size: 0.12rem;
+  color: #000; }
+
+.content {
+  -webkit-flex: 1;
+  overflow-y: auto; }
+
+.nav {
+  height: 0.44rem;
+  line-height: 0.44rem;
+  display: -webkit-flex;
+  position: relative; }
+  .nav li {
+    -webkit-flex: 1;
+    text-align: center; }
+  .nav p {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
+    width: 20%;
+    height: 4px; }
+    .nav p a {
+      display: block;
+      margin: 0 auto;
+      width: 26px;
+      height: 4px;
+      background: #724eee; }
+
+.list dl {
+  height: 0.9rem;
+  border-top: 1px solid #ccc;
+  display: -webkit-flex;
+  padding: 0.1rem;
+  box-sizing: border-box; }
+  .list dl dt {
+    -webkit-flex: 1; }
+    .list dl dt img {
+      width: 0.7rem;
+      height: 0.7rem; }
+  .list dl dd {
+    -webkit-flex: 3;
+    padding-left: 0.1rem;
+    box-sizing: border-box; }
+    .list dl dd h3 {
+      color: #000;
+      font-weight: normal;
+      font-size: 0.16rem; }
+    .list dl dd p {
+      line-height: 0.5rem; }
+      .list dl dd p span {
+        color: #333;
+        margin-left: 0.1rem; }
+
+/*# sourceMappingURL=search.css.map */

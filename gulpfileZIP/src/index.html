@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=2,maximum-scale=1,user-scalable=no">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/iconfont.css">
+    <link type="text/css" rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/star.css">
+</head>
+<body>
+    <header class="header">
+        <a href="javascript:;"><i class="icon iconfont icon-naoling"></i></a>
+        <div>
+            <i class="icon iconfont icon-sousuo2"></i>
+            <input type="text" placeholder='搜索你感兴趣的内容和明星'>
+        </div>
+        <a href="javascript:;"><i class="icon iconfont icon-rli1"></i></a>
+    </header>
+    <div class="content">
+        <div class="toplist">
+            <dl>
+                <dt><a href="javascript:;"><i class="icon iconfont icon-rli1"></i></a></dt>
+                <dd>行程</dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;"><i class="icon iconfont icon-renwu"></i></a></dt>
+                <dd>任务</dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;"><i class="icon iconfont icon-rli1"></i></a></dt>
+                <dd>资讯</dd>
+            </dl>
+            <dl>
+                <dt><a href="javascript:;"><i class="icon iconfont icon-icon_nlms_plk_huati"></i></a></dt>
+                <dd>话题</dd>
+            </dl>
+        </div>
+        <div class="starpx">
+            <div class="tit">
+                -星球排行榜-
+            </div>
+            <div class="msg">
+            </div>
+        </div>
+        <div class="conlist">
+            <div class="tit mt10">
+                -24小时热门话题-
+            </div>
+            <div class="con">
+                <!-- <dl>
+                    <dt>
+                        <img src="images/images/pic_13.jpg">
+                    </dt>
+                    <dd>
+                        <h3>#少女时代十周年#</h3>
+                        <p class="text-nowrap">那年夏天的少女们好像一眨眼就长大了 褪去了...</p>
+                        <div>
+                            <span><i class="icon iconfont icon-wuxing"></i></span>
+                            <b>3万</b>
+                            <a href="javascript:;">来自黄美英Tiffany的圈子</a>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <img src="images/images/pic_16.jpg">
+                    </dt>
+                    <dd>
+                        <h3>#yuri《被告人》#</h3>
+                        <p class="text-nowrap">少女时代成员Yuri将担任2017年SBS首部月火...</p>
+                        <div>
+                            <span><i class="icon iconfont icon-wuxing"></i></span>
+                            <b>9854</b>
+                            <a href="javascript:;">来自有权余力Yuri的圈子</a>
+                        </div>
+                    </dd>
+                </dl> -->
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <dl>
+            <dt><i class="icon iconfont icon-iconfontxiaolian2 active"></i></dt>
+            <dd>微笑</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-iconfontjifen2"></i></dt>
+            <dd>探索</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-gengduo1 active"></i></dt>
+            <dd>添加</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-zhibo"></i></dt>
+            <dd>我的</dd>
+        </dl>
+        <dl>
+            <dt><i class="icon iconfont icon-wenhao1"></i></dt>
+            <dd>更多</dd>
+        </dl>
+    </footer>
+    <script type="text/javascript" src='./js/libs/zepto.min.js'></script>
+    <script type="text/javascript">
+    $.ajax({
+        url:'data/star.json',
+        type:'GET',
+        success:function(json){
+            var moodstr = "";
+            var mood = json.data;
+            var msgstr = "";
+            var msg = json.msg;
+            $.each(mood,function(ind,item){
+                moodstr +="<dl><dt><img src='"+item.img+"'></dt><dd><p>"+item.names+"</p><span>人气值"+item.moods+"万</span></dd></dl>";
+            })
+            $('.msg').append(moodstr);
+            $.each(msg,function(index,items){
+                msgstr += "<dl><dt><img src='"+items.src+"''></dt><dd><h3>"+items.tit+"</h3><p class='text-nowrap'>"+items.con+"</p><div><span><i class='icon iconfont icon-wuxing'></i></span><b>"+items.num+"</b><a href='javascript:;'>"+items.from+"</a></div></dd></dl>";
+            })
+            $('.con').append(msgstr);
+        }
+    })
+    </script>
+</body>
+</html>
